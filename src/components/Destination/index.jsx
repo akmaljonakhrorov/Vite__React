@@ -12,6 +12,20 @@ export const Destination = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <Container>

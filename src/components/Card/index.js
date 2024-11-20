@@ -1,6 +1,5 @@
 import { Button, Modal } from "antd";
 import styled from "styled-components";
-import userImg from "../../assets/images/userImg.png";
 const Container = styled.div`
   position: relative;
   margin-bottom: 75px;

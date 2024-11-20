@@ -11,10 +11,30 @@ const Container = styled.div`
   max-width: 1440px;
   margin: auto;
   margin-top: 96px;
-  .subTitle,
+  @media only screen and (max-width: 480px) {
+    margin-top: 450px;
+    padding: 0px 20px;
+  }
+  .subTitle {
+    @media only screen and (max-width: 480px) {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+      padding: 0px 20px;
+      width: 100%;
+      min-width: 430px;
+    }
+  }
   .title {
     text-align: left;
     margin-bottom: 0px;
+    @media only screen and (max-width: 480px) {
+      line-height: 20px;
+      width: 100%;
+      min-width: 430px;
+      padding: 20px 0px;
+    }
   }
 `;
 
@@ -26,12 +46,27 @@ const TicketWrapper = styled.div`
   padding-bottom: 10px;
   margin-top: ${({ $top }) => $top && "40px"};
   border-bottom: 1px solid black;
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0px;
+  }
 `;
 
 const SectionLeft = styled.section`
   display: flex;
   flex: 0.4;
-  /* width: 40%; */
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    height: 370px;
+    padding: 0px 0px;
+    text-align: center;
+  }
 `;
 const SectionRight = styled.section`
   display: flex;
@@ -44,6 +79,9 @@ const SectionRight = styled.section`
     line-height: 32px;
     color: rgb(175, 175, 175);
   }
+  @media only screen and (max-width: 480px) {
+    padding: 0px 0px;
+  }
 `;
 const Content = styled.div`
   display: flex;
@@ -54,6 +92,12 @@ const Content = styled.div`
     font-weight: 700;
     line-height: 32px;
     color: rgb(42, 42, 42);
+  }
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
   }
 `;
 
@@ -77,12 +121,22 @@ const AntDButton = styled(Button)`
     transform: scale(1.1);
     border: 1px solid #75a4c1;
   }
+  @media only screen and (max-width: 480px) {
+    width: 120px;
+    height: 60px;
+    padding: 12px 20px;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   border-radius: 35px;
-  height: fit-content;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    max-width: 430px;
+    min-height: 330px;
+    border-radius: 25px;
+  }
 `;
 const Devider = styled.div`
   display: flex;

@@ -8,11 +8,22 @@ const Container = styled.div`
   margin: auto;
   width: 100%;
   margin-top: 85px;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    max-width: 480px;
+    padding: 0px;
+  }
 `;
 
 const HomeImg = styled.img`
   width: 100%;
   max-height: 600px;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    max-width: 480px;
+    padding: 0px;
+    height: 432px;
+  }
 `;
 const Content = styled.div`
   display: flex;
@@ -28,6 +39,21 @@ const Content = styled.div`
     font-size: 64px;
     font-weight: 700;
     margin: 12px 0px;
+    @media only screen and (max-width: 480px) {
+      font-size: 24px;
+      font-weight: 700;
+      min-width: 310px;
+      height: 32px;
+      margin-bottom: 64px !important;
+    }
+  }
+  h2 {
+    @media only screen and (max-width: 480px) {
+      font-size: 16px;
+      font-weight: 600;
+      min-width: 310px;
+      margin-bottom: 0px !important;
+    }
   }
 `;
 const Blur = styled.div`
@@ -55,6 +81,12 @@ const Button = styled.div`
     background: rgb(117, 164, 193);
     color: white;
   }
+  @media only screen and (max-width: 480px) {
+    max-width: 165px;
+    max-height: 45px;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
 `;
 const Section = styled.section`
   display: flex;
@@ -63,6 +95,14 @@ const Section = styled.section`
   position: absolute;
   gap: 45px;
   bottom: -35%;
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    margin-top: 30px;
+  }
 `;
 const SectionItem = styled.div`
   display: flex;
@@ -77,6 +117,15 @@ const SectionItem = styled.div`
   background: #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
   padding: 16px 16px;
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 332px;
+    min-height: 290px;
+    gap: 25px;
+    /* margin-top: 30px; */
+  }
 `;
 const ContactIcon = styled.div`
   display: flex;
@@ -86,6 +135,10 @@ const ContactIcon = styled.div`
   height: 60px;
   border-radius: 50%;
   background: #f0f0f0;
+  @media only screen and (max-width: 480px) {
+    width: 48px;
+    height: 48px;
+  }
 `;
 export {
   Container,

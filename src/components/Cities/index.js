@@ -5,6 +5,11 @@ const Container = styled.div`
   max-width: 1440px;
   margin: auto;
   margin-bottom: 75px;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    padding: 0px 0px;
+    text-align: center;
+  }
 `;
 
 const Content = styled.div`
@@ -13,6 +18,10 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 85px;
+  @media only screen and (max-width: 480px) {
+    width: 480px;
+    padding: 0px 15px;
+  }
 `;
 
 export { Container, Content };

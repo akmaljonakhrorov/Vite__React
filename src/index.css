@@ -1,11 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
+  outline: 5px solid red; /* Ko‘rib olish uchun vaqtincha chegara */
 }
+
+/* main start */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* main end*/
 
 /* conatiner padding */
 :root {
@@ -31,7 +53,13 @@ body {
   height: 25px;
   margin-left: 12px;
 }
+.pages {
+  @media only screen and (min-width: 480px) {
+    display: none;
+  }
+}
 
+/* generic styles */
 .subTitle {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
@@ -71,6 +99,11 @@ body {
   line-height: 21px;
   color: rgb(175, 175, 175);
   text-align: left;
+  @media only screen and (max-width: 480px) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
 }
 .users {
   width: 20px;
@@ -141,12 +174,21 @@ body {
   color: rgb(168, 202, 61);
   width: 24px;
   height: 24px;
+  @media only screen and (max-width: 480px) {
+    width: 16px;
+    height: 16px;
+  }
 }
 .phone__call {
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
   color: rgb(42, 42, 42);
+  @media only screen and (max-width: 480px) {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
 }
 
 .phone__number {
@@ -154,6 +196,11 @@ body {
   line-height: 24px;
   font-weight: 500;
   color: rgb(168, 202, 61);
+  @media only screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+  }
 }
 
 /* form */
@@ -175,14 +222,31 @@ body {
   font-weight: 600;
   line-height: 36px;
   color: rgb(255, 255, 255);
+  @media only screen and (max-width: 480px) {
+    font-size: 28px;
+    text-align: center;
+    max-width: 415px;
+    height: 100px;
+  }
 }
 .content__item {
   padding-right: 20px;
   font-size: 24px;
   text-align: left;
+  @media only screen and (max-width: 480px) {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
 }
 .footer__title {
   padding: 0px !important;
   margin: opx !important;
   text-align: left;
+  @media only screen and (max-width: 480px) {
+    font-size: 18px;
+    text-align: center;
+    max-width: 415px;
+    max-height: 50px;
+  }
 }

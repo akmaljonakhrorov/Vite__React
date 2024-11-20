@@ -14,6 +14,14 @@ const Container = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: auto;
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+    width: 100%;
+    padding: 0px 0px;
+    text-align: center;
+  }
 `;
 
 const TicketWrapper = styled.div`
@@ -22,12 +30,28 @@ const TicketWrapper = styled.div`
   align-items: center;
   flex-direction: row;
   margin-top: ${({ $top }) => $top && "40px"};
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 0px;
+    text-align: center;
+    margin-top: 0px;
+  }
 `;
 
 const SectionLeft = styled.section`
   display: flex;
   flex: 0.4;
-  /* width: 40%; */
+  @media only screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    height: 370px;
+    padding: 0px 0px;
+    text-align: center;
+  }
 `;
 const SectionRight = styled.section`
   display: flex;
@@ -51,6 +75,9 @@ const Content = styled.div`
     line-height: 32px;
     color: rgb(42, 42, 42);
   }
+  @media only screen and (max-width: 480px) {
+    padding-top: 20px;
+  }
 `;
 
 const AntDButton = styled(Button)`
@@ -73,11 +100,22 @@ const AntDButton = styled(Button)`
     transform: scale(1.1);
     border: 1px solid #75a4c1;
   }
+  @media only screen and (max-width: 480px) {
+    width: 120px;
+    height: 60px;
+    padding: 12px 20px;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   border-radius: 35px;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    max-width: 430px;
+    min-height: 330px;
+    border-radius: 25px;
+  }
 `;
 const Devider = styled.div`
   display: flex;

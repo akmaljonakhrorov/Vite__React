@@ -1,5 +1,8 @@
-import Link from "antd/es/typography/Link";
 import React from "react";
+import Link from "antd/es/typography/Link";
+
+import { List } from "./index.js";
+
 const navlinks = [
   { path: "/homepage", title: "Home" },
   { path: "/about", title: "About" },
@@ -11,9 +14,9 @@ const Navlinks = () => {
     <>
       {navlinks.map((value, index) => {
         return (
-          <li key={index}>
+          <List key={index}>
             <Link to={value.path}>{value.title}</Link>
-          </li>
+          </List>
         );
       })}
     </>
