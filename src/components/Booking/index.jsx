@@ -10,7 +10,6 @@ import {
 } from ".";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-// import booking from "../../assets/images/booking.jpeg";
 import home from "../../assets/images/home.jpg";
 const Booking = () => {
   return (
