@@ -5,6 +5,7 @@ import languageDetector from "i18next-browser-languagedetector";
 import uzTranslation from "../public/uz.json";
 import ruTranslation from "../public/ru.json";
 import enTranslation from "../public/en.json";
+const language = localStorage.getItem("i18nextLng") || "uz";
 i18n
   .use(Backend)
   // detect the language
@@ -13,7 +14,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
-    lng: "uz",
+    lng: language,
     debug: true,
     resources: {
       uz: { translation: uzTranslation },

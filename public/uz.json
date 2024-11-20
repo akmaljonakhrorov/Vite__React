@@ -2,5 +2,33 @@
   "Bosh Sahifa": "Bosh Sahifa",
   "Biz Haqimizda": "Biz Haqimizda",
   "Turlar": "Turlar",
-  "Kontaktlar": "Kontaktlar"
+  "Kontaktlar": "Kontaktlar",
+  "home": {
+    "homeSubtitle": "Sharqning go'zalliklarini biz bilan birga his eting!",
+    "countryName": "Xitoy",
+    "contact": "Biz bilan bog'laning"
+  },
+  "destin": {
+    "pageSubtitle": "Unutilmas Sayohatlar Uchun Top 10 Go‘zal Maskan",
+    "pageTitle": "Sizni har hafta yangi imkoniyatlar va kutilmagan sarguzashtlar kutmoqda! Har bir shahar o‘zining maxfiy go‘zalliklarini ochib, sizga yangi sarguzashtlar sovg‘a qiladi. O‘zingizni shu mo‘jizalarning bir qismi deb his qiling!"
+  },
+  "city": {
+    "pageSubtitle": "Ushbu manzillarga eksklyuziv sayohatlar taklif qilamiz!",
+    "pageTitle": "Xitoy shaharlarga siz uchun qulay va xavfsiz sayohatlar tashkil etamiz!"
+  },
+  "card": {
+    "cardTitle": "Xian",
+    "clients": "450 Bururtmalar",
+    "support": "Bizning hizmatlar o'z ichiga oladi:",
+    "price": "Eng arzon narxlar",
+    "time": "Hujjatlarni tez rasmiylashtrish",
+    "assistance": "Ishonchli yordam",
+    "resevre": "Joy band qilish",
+    "fillForm": "Iltimos, ushbu formani to'ldiring.",
+    "submit": "Jo'natish",
+    "name": "Ismingiz",
+    "surname": "Familiyangiz",
+    "phoneNumber": "Telefon raqamingiz",
+    "telegramUsName": "Telegram user link"
+  }
 }

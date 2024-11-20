@@ -3,8 +3,10 @@ import Card from "../Card/index.jsx";
 // react slick
 import React from "react";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 export const Cities = () => {
+  const { t } = useTranslation();
   var settings = {
     dots: true,
     infinite: true,
@@ -28,15 +30,25 @@ export const Cities = () => {
       },
     ],
   };
+  const dataToTranslate = [
+    {
+      pageSubtitle: t("city.pageSubtitle"),
+      pageTitle: t("city.pageTitle"),
+    },
+  ];
   return (
     <Container>
       <Content>
-        <div className="subTitle">
-          We offer exclusive trips to these destinations!
-        </div>
-        <div className="title">
-          We organize comfortable and safe trips to Chinese cities just for you!
-        </div>
+        {dataToTranslate.map((value, index) => {
+          return (
+            <>
+              <div key={index} className="subTitle">
+                {value?.pageSubtitle}
+              </div>
+              <div className="title">{value?.pageTitle}</div>
+            </>
+          );
+        })}
       </Content>
       <div className="slider-container">
         <Slider {...settings}>

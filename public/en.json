@@ -2,5 +2,33 @@
   "Bosh Sahifa": "Home",
   "Biz Haqimizda": "About",
   "Turlar": "Tours",
-  "Kontaktlar": "Contact"
+  "Kontaktlar": "Contact",
+  "home": {
+    "homeSubtitle": "Experience the beauty of the East with us!!",
+    "countryName": "China",
+    "contact": "Contact Us"
+  },
+  "city": {
+    "pageSubtitle": "We offer exclusive trips to these destinations!",
+    "pageTitle": "We organize comfortable and safe trips to Chinese cities just for you!"
+  },
+  "destin": {
+    "pageSubtitle": "Top 10 Beautiful Destinations for Unforgettable Travels",
+    "pageTitle": "Every week, new opportunities and unexpected adventures await you! Each city reveals its hidden beauty, offering you new adventures. Feel like you are part of these wonders!"
+  },
+  "card": {
+    "cardTitle": "Cian",
+    "clients": "450 Check Ins",
+    "support": "Benefits of our Visa Support service:",
+    "price": "Best Price",
+    "time": "Short Processing Time",
+    "assistance": "Trustworthy Assistance",
+    "resevre": "Make a Reservation",
+    "fillForm": "Please fill this form",
+    "submit": "Submit",
+    "name": "Your Name",
+    "surname": "Your Surname",
+    "phoneNumber": "Your phone number",
+    "telegramUsName": " Your telegram user name or contact number"
+  }
 }

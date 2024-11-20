@@ -1,10 +1,10 @@
 import React from "react";
-import { Container, Section, Logo } from "./index";
+import { Container, Logo, Section } from "./index";
 import logoImg from "../../assets/images/logoImg.png";
 import Navlinks from "../Navlinks/index.jsx";
 // icons
-import { FaTelegram } from "react-icons/fa6";
-import { FaInstagramSquare, FaFacebook } from "react-icons/fa";
+// import { FaTelegram } from "react-icons/fa6";
+// import { FaInstagramSquare, FaFacebook } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -17,13 +17,13 @@ const Navbar = () => {
           <Navlinks />
         </ul>
       </Section>
-      <Section>
-        <div className="contact">
+      {/* <Section> */}
+      {/* <div className="contact">
           <FaTelegram className="nav-icon" />
           <FaInstagramSquare className="nav-icon" />
           <FaFacebook className="nav-icon" />
-        </div>
-      </Section>
+        </div> */}
+      {/* </Section> */}
     </Container>
   );
 };

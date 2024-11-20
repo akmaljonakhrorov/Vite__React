@@ -2,6 +2,7 @@ import { Container, Content, Card } from ".";
 // react slick
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 export const Destination = () => {
   var settings = {
@@ -27,17 +28,34 @@ export const Destination = () => {
       },
     ],
   };
+  const { t } = useTranslation();
+  const dataToTranslate = [
+    {
+      pageSubtitle: t("destin.pageSubtitle"),
+      pageTitle: t("destin.pageTitle"),
+    },
+  ];
   return (
     <Container>
       <Content>
-        <div className="subTitle">
+        {/* <div className="subTitle">
           Top 10 Beautiful Destinations for Unforgettable Travels
         </div>
         <div className="title">
           Every week, new opportunities and unexpected adventures await you!
           Each city reveals its hidden beauty, offering you new adventures. Feel
           like you are part of these wonders!
-        </div>
+        </div> */}
+        {dataToTranslate.map((value, index) => {
+          return (
+            <>
+              <div key={index} className="subTitle">
+                {value?.pageSubtitle}
+              </div>
+              <div className="title">{value?.pageTitle}</div>
+            </>
+          );
+        })}
       </Content>
       <div className="slider-container">
         <Slider {...settings}>
