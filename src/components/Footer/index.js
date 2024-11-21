@@ -42,6 +42,19 @@ const Content = styled.div`
   max-height: 300px;
   color: white;
   padding: 25px;
+  .title {
+    padding: 0px !important;
+    margin: opx !important;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    @media only screen and (max-width: 480px) {
+      font-size: 18px;
+      text-align: center;
+      max-width: 415px;
+      max-height: 50px;
+    }
+  }
   @media only screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;

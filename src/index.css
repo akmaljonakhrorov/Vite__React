@@ -243,6 +243,12 @@ video {
   padding: 0px !important;
   margin: opx !important;
   text-align: left;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: rgb(206, 141, 56);
+  }
+
   @media only screen and (max-width: 480px) {
     font-size: 18px;
     text-align: center;

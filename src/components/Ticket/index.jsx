@@ -11,60 +11,63 @@ import {
   Image,
   Devider,
 } from ".";
-
+import { useTranslation } from "react-i18next";
 export const Ticket = () => {
+  const { t } = useTranslation();
+  const dataToTranslate = [
+    {
+      subtitle: t("ticket.subtitle"),
+      title: t("ticket.title"),
+      firstCardTitle: t("ticket.firstCardTitle"),
+      secondCardTitle: t("ticket.secondCardTitle"),
+      button: t("ticket.button"),
+      world: t("ticket.world"),
+      firstCardInfo: t("ticket.firstCardInfo"),
+      secondCardInfo: t("ticket.secondCardInfo"),
+      global: t("ticket.global"),
+    },
+  ];
   return (
     <Container>
-      <div className="subTitle">
-        Find Tickets With us Easily and at a Low Price
-      </div>
-      <div className="title">
-        Find the best deals on railway and airplane tickets in each city,
-        carefully selected for you.
-      </div>
-      <TicketWrapper>
-        <SectionLeft>
-          <Image src={imgMetro} />
-        </SectionLeft>
-        <SectionRight>
-          <Content>
-            <div className="card__title left">
-              Cheap Railway Tickets With Us
+      {dataToTranslate.map((value, index) => {
+        return (
+          <>
+            <div key={index} className="subTitle">
+              {value.subtitle}
             </div>
-            <AntDButton>Explore More</AntDButton>
-          </Content>
-          <p className="info">Whole world</p>
-          <div className="info">
-            Embark on a railway adventure and explore destinations worldwide.
-            Whether its the picturesque landscapes, bustling cities, or cultural
-            gems, our rail services offer a unique and comfortable way to
-            traverse the globe. Immerse yourself in the beauty of different
-            cultures, all accessible through our extensive railway network.
-          </div>
-        </SectionRight>
-      </TicketWrapper>
-      <Devider></Devider>
-      <TicketWrapper $top={true}>
-        <SectionLeft>
-          <Image src={imgPlnae} />
-        </SectionLeft>
-        <SectionRight>
-          <Content>
-            <div className="card__title left">
-              Discover Exciting Air Travel Dealss
-            </div>
-            <AntDButton>Explore More</AntDButton>
-          </Content>
-          <p className="info">Global Destinations</p>
-          <div className="info">
-            Embark on a railway adventure and explore destinations worldwide.
-            Whether its the picturesque landscapes, bustling cities, or cultural
-            gems, our rail services offer a unique and comfortable way to
-            traverse the globe. Immerse yourself in the beauty of different
-            cultures, all accessible through our extensive railway network.
-          </div>
-        </SectionRight>
-      </TicketWrapper>
+            <div className="title">{value.title}</div>
+            <TicketWrapper>
+              <SectionLeft>
+                <Image src={imgMetro} />
+              </SectionLeft>
+              <SectionRight>
+                <Content>
+                  <div className="card__title left">{value.firstCardTitle}</div>
+                  <AntDButton>{value.button}</AntDButton>
+                </Content>
+                <p className="info">{value.world}</p>
+                <div className="info">{value.firstCardInfo}</div>
+              </SectionRight>
+            </TicketWrapper>
+            <Devider></Devider>
+            <TicketWrapper $top={true}>
+              <SectionLeft>
+                <Image src={imgPlnae} />
+              </SectionLeft>
+              <SectionRight>
+                <Content>
+                  <div className="card__title left">
+                    {value.secondCardTitle}
+                  </div>
+                  <AntDButton>{value.button}</AntDButton>
+                </Content>
+                <p className="info">{value.global}</p>
+                <div className="info">{value.secondCardInfo}</div>
+              </SectionRight>
+            </TicketWrapper>
+          </>
+        );
+      })}
     </Container>
   );
 };

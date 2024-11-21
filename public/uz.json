@@ -30,5 +30,58 @@
     "surname": "Familiyangiz",
     "phoneNumber": "Telefon raqamingiz",
     "telegramUsName": "Telegram user link"
+  },
+  "ticket": {
+    "subtitle": "Biz Bilan Chiptalarni Arzon va Oson Toping.",
+    "title": "Har bir shaharda eng yaxshi temir yo‘l va aviachipta biletlarini biz bilan toping",
+    "firstCardTitle": "Temir Yo‘l Biletleri Biz Bilan",
+    "secondCardTitle": "Aviabiletlar Biz Bilan Arzon",
+    "button": "Ko'proq bilish",
+    "world": "Butun dunyo bo'ylab",
+    "firstCardInfo": "Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning.",
+    "secondCardInfo": "Eng arzon, qulay, xavfsiz aviabiletlar biz bilan! Bizga bog'laning, biz sizga eng maqbul bo'ladigan aviabilerni topib beramiz",
+    "global": "Jahon bo‘ylab Manzillar"
+  },
+  "facts": {
+    "firstCardSubtitle": "Xitoy Haqida Qiziqarli Faktlar",
+    "firstCardTitle": "Bilamizkiy, Xitoy o‘ziga xos bog‘ madaniyatiga va tarixiga ega. Biz sizga bu bo‘limda qiziqarli ma'lumotlarni taqdim etamiz.",
+    "firstCard": "Choy madaniyati",
+    "button": "Koproq bilish",
+    "world": "Xitoyning choy madaniyati",
+    "firstCardInfo": "Xitoy choy madaniyati asrlar davomida shakllangan va dunyodagi eng qadimiy an'analardan biridir. Choy ichish Xitoy xalqining kundalik hayotining ajralmas qismiga aylangan bo‘lib, bu madaniyat nafaqat ichimlikni tayyorlash uslubini, balki sog‘liq va ruhiyatga bo‘lgan hurmatni ham aks ettiradi.",
+    "direction": "Qiziqarlimi",
+    "secondCard": "Osmon osti mamlakati",
+    "kingdom": "Xitoy Osmon osti mamlakati",
+    "secondCardInfo": "(Xitoy tilida Tiānxià — 天下) tushunchasi Xitoy madaniyatida va tarixida muhim ahamiyatga ega. Bu qadimiy ibora Xitoyni va u bilan bog‘liq bo‘lgan dunyoqarashni tasvirlash uchun ishlatiladi. Osmon osti mamlakati tushunchasi Xitoy imperatorlik davrida shakllangan bo‘lib, Osmon (Tian) hukmronlik qiladigan joy sifatida ko‘rilgan va bu hukmronlik er yuzidagi barcha narsalarga taalluqli deb qaralgan.",
+    "thirdCard": "Xitoy oshxonasi",
+    "diversity": "Xitoy oshxonasining xilma-xilligi",
+    "thirdCardInfo": "Xitoy oshxonasi butun dunyoda mashhur bo‘lib, taomlarning xilma-xilligi bilan ajralib turadi. Har bir viloyat o‘ziga xos taomlari bilan tanilgan, masalan, Siçuan taomlari o‘tkir, Pekin esa Pekin o‘rdagi bilan mashhur"
+  },
+  "location": {
+    "subtitle": "Eng Yaxshi Manzillar",
+    "title": "Har bir shahardagi eng yaxshi takliflarimizni kashf eting, faqat siz uchun. O'zingiz uchun yangi dunyosni oching va misli ko'rilmagan sarguzashtlar ega bo'ling.",
+    "city": " Nanjin",
+    "population": "Aholi soni: 2 Mln."
+  },
+  "booking": {
+    "subtitle": "O'zingiz yoqtirganingizni tanlang",
+    "title": "O'z joyingizni band qiling",
+    "button": "Ko'proq bilish",
+    "phone": "Telefon raqam",
+    "number": "+998 77 111 37 77",
+    "email": "Bizga email orqali bog'laning",
+    "emailAddress": "tourland@mail.ru",
+    "office": "Ofisimizga tashrif buyuring",
+    "address": "Yakkasaroy tumani, Boʻrijar koʻchasi 1-uy"
+  },
+  "footer": {
+    "subtitle": "Tourland sifatli va ishonchli xizmatni kafolatlaydi.",
+    "title": "Siz eng yaxshisiga loyiqsiz, Tourlend — eng yaxshi tanlov!",
+    "links": "Foydali linklar",
+    "home": "Bosh Sahifa",
+    "about": "Biz Haqimizda",
+    "resources": "Boshqa manbalar",
+    "tours": "Turlar",
+    "contact": "Kontaktlar"
   }
 }

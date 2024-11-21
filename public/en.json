@@ -30,5 +30,58 @@
     "surname": "Your Surname",
     "phoneNumber": "Your phone number",
     "telegramUsName": " Your telegram user name or contact number"
+  },
+  "ticket": {
+    "subtitle": "Find Tickets With us Easily and at a Low Price",
+    "title": "Find the best deals on railway and airplane tickets in each city,carefully selected for you.",
+    "firstCardTitle": "Cheap Railway Tickets With Us",
+    "secondCardTitle": "Discover Exciting Air Travel Deals",
+    "button": "Explore more",
+    "world": "Whole world",
+    "firstCardInfo": "Embark on a railway adventure and explore destinations worldwide. Whether its the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network.",
+    "secondCardInfo": "Embark on a airway adventure and explore destinations worldwide. Whether its the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network.",
+    "global": "Global Destinations"
+  },
+  "facts": {
+    "firstCardSubtitle": "Interesting facts about China",
+    "firstCardTitle": "China has a unique garden culture and history. In this section, we will provide you with interesting information.",
+    "firstCard": "Tea culture",
+    "button": "Explore more",
+    "world": "Chinese Tea Culture",
+    "firstCardInfo": "Chinese tea culture has developed over centuries and is one of the oldest traditions in the world. Drinking tea has become an integral part of daily life for the Chinese people, and this culture reflects not only the method of preparing the beverage but also the respect for health and spirit.",
+    "direction": "Need Directions",
+    "secondCard": "The Middle Kingdom",
+    "kingdom": "China, The Middle Kingdom",
+    "secondCardInfo": "(In Chinese, Tiānxià — 天下) is a concept of great significance in Chinese culture and history. This ancient phrase is used to describe China and the worldview associated with it. The concept of the Middle Kingdom developed during the imperial era of China, where it was seen as the place ruled by Heaven (Tian), and this rule was considered to extend to everything on Earth.",
+    "thirdCard": "Chinese cuisine",
+    "diversity": "The Diversity of Chinese Cuisine",
+    "thirdCardInfo": "Chinese cuisine is famous worldwide for its diversity of dishes. Each region is known for its unique dishes, for example, Sichuan cuisine is known for its spiciness, while Beijing is famous for Peking duck."
+  },
+  "location": {
+    "subtitle": "Best Locations",
+    "title": "Discover the best offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "city": " Nanjing",
+    "population": "Population: 2M"
+  },
+  "booking": {
+    "subtitle": "Book Prefered Deal Here",
+    "title": "Make Your Reservation",
+    "button": "Discover more",
+    "phone": "Make a Phone Call",
+    "number": "+998 77 111 37 77",
+    "email": "Contact Us via Email",
+    "emailAddress": "tourland@mail.ru",
+    "office": "Visit Our Offices",
+    "address": "Yakkasaray District, 1 Borijar Street."
+  },
+  "footer": {
+    "subtitle": "Tourland guarantees quality and reliable service.",
+    "title": "You deserve the best, Tourland is the best choice!",
+    "links": "Useful Links",
+    "home": "Home",
+    "about": "About",
+    "resources": "Other Resources",
+    "tours": "Tours",
+    "contact": "Contacts"
   }
 }
