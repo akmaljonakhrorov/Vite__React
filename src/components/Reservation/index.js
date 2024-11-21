@@ -36,7 +36,7 @@ const Section = styled.div`
     padding: 0px 0px;
   }
 `;
-const Form = styled.section`
+const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@ const Input = styled.input`
   padding: 10px;
   outline: none;
 `;
-const Button = styled.div`
+const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
