@@ -31,7 +31,7 @@ export const Footer = () => {
                 <div className="content__items">
                   <span className="content__item">
                     <a href="https://t.me/+yo3-7v2W5jsxOGYy">
-                      <FaTelegram />
+                      <FaTelegram className="faTelegram" />
                     </a>
                   </span>
                   <span className="content__item">
