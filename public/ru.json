@@ -1,8 +1,10 @@
 {
-  "Bosh Sahifa": "Главная",
-  "Biz Haqimizda": "О Нас",
-  "Turlar": "Туры",
-  "Kontaktlar": "Контакты",
+  "navlinks": {
+    "home": "Главная",
+    "about": "О Нас",
+    "tours": "Туры",
+    "contact": "Контакты"
+  },
   "home": {
     "homeSubtitle": "Ощутите красоту Востока вместе с нами!",
     "countryName": "Китай",

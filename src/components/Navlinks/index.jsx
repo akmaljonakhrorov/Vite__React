@@ -12,7 +12,7 @@ const Navlinks = () => {
   const navlinks = [
     { path: "/homepage", title: t("Bosh Sahifa") },
     { path: "/about", title: t("Biz Haqimizda") },
-    { path: "/toures", title: t("Turlar") },
+    { path: "/tours", title: t("Turlar") },
     { path: "/contact", title: t("Kontaktlar") },
   ];
 

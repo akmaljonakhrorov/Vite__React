@@ -1,8 +1,10 @@
 {
-  "Bosh Sahifa": "Home",
-  "Biz Haqimizda": "About",
-  "Turlar": "Tours",
-  "Kontaktlar": "Contact",
+  "navlinks": {
+    "home": "Home",
+    "about": "About",
+    "tours": "Tours",
+    "contact": "Contact"
+  },
   "home": {
     "homeSubtitle": "Experience the beauty of the East with us!!",
     "countryName": "China",

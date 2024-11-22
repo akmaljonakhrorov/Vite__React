@@ -1,8 +1,10 @@
 {
-  "Bosh Sahifa": "Bosh Sahifa",
-  "Biz Haqimizda": "Biz Haqimizda",
-  "Turlar": "Turlar",
-  "Kontaktlar": "Kontaktlar",
+  "navlinks": {
+    "home": "Bosh Sahifa",
+    "about": "Biz Haqimizda",
+    "tours": "Turlar",
+    "contact": "Kontaktlar"
+  },
   "home": {
     "homeSubtitle": "Sharqning go'zalliklarini biz bilan birga his eting!",
     "countryName": "Xitoy",
