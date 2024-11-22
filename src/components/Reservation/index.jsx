@@ -1,28 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Button, Section, Form, Input, Content } from ".";
 // send message to telegram bot via axios
 import axios from "axios";
 
 export const Reservation = () => {
+  const [loading, setLoading] = useState(false);
   const sendMessage = (event) => {
+    setLoading(true);
     event.preventDefault();
     const token = "7840662785:AAHZCWGajqSHMZCp76PmkvN3wo4n_extWvI";
     const myID = 294010010;
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
     const name = document.getElementById("name").value;
+    const guests = document.getElementById("guests").value;
+    const destinations = document.getElementById("destinations").value;
+    const support = document.getElementById("support").value;
+    const messageContent = `Name: ${name} \nNumber guests: ${guests} \nDestination: ${destinations} \nVisa Support: ${support}`;
     axios({
       url: url,
       method: "POST",
       data: {
         chat_id: myID,
-        text: name,
+        text: messageContent,
       },
     })
       .then((res) => {
+        document.getElementById("myForm").reset();
         alert("Success", res);
       })
       .catch((err) => {
         console.log("Smthing went wrong", err);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
   return (
@@ -39,20 +49,22 @@ export const Reservation = () => {
           </label>
           <label htmlFor="">
             Number of Guests
-            <Input placeholder="1 or 2 or 3..." />
+            <Input id="guests" placeholder="1 or 2 or 3..." />
           </label>
         </Content>
-        <div className="width__full">
+        <div classid="width__full">
           <label htmlFor="">
             Choose Your Destination
-            <Input placeholder="Country" $width={true} />
+            <Input id="destinations" placeholder="Country" $width={true} />
           </label>
           <label htmlFor="">
             Choose Your Visa Support
-            <Input placeholder="Ex.China" $width={true} />
+            <Input id="support" placeholder="Ex.China" $width={true} />
           </label>
         </div>
-        <Button type="submit">make a reservation now </Button>
+        <Button type="submit" loading={loading}>
+          {loading ? "Data is sending..." : "make a reservation now"}
+        </Button>
       </Form>
     </Container>
   );
