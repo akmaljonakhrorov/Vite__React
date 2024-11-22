@@ -10,6 +10,23 @@ const Container = styled.div`
   text-align: center;
   @media only screen and (max-width: 480px) {
     padding: 0px 25px;
+    .slider-itmes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    .subTitle {
+      height: 35px;
+    }
+    .title {
+      padding: 20px 0px;
+    }
   }
 `;
 
@@ -45,8 +62,13 @@ const Card = styled.div`
     object-fit: cover;
     @media only screen and (max-width: 480px) {
       width: 100%;
-      /* border-radius: 35px; */
     }
+  }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    width: 100%;
+    min-width: 250px;
+    padding: 10px;
   }
 `;
 const IconBackground = styled.div`
@@ -88,7 +110,9 @@ const Blur = styled.div`
   border-radius: 25px;
   @media only screen and (max-width: 480px) {
     display: none;
-    /* border-radius: 35px; */
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 `;
 export { Container, Content, Card, IconBackground, Details, Blur };

@@ -127,19 +127,17 @@ const Button = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    width: 100px;
+    width: 130px;
     height: 48px;
     border: none;
     border-radius: 25px;
     font-size: 14px;
     font-weight: 600;
-    transition: transform 0.5s ease-in-out;
     &:hover {
       width: 120px;
       background: white;
       color: rgb(117, 164, 193);
       border: 2px solid #75a4c1;
-      transform: none;
     }
   }
 `;

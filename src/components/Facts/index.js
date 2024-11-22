@@ -36,6 +36,13 @@ const Container = styled.div`
       padding: 20px 0px;
     }
   }
+  @media only screen and (max-width: 768px) {
+    padding: 0px 20px;
+    .title {
+      padding: 10px 0px;
+      text-align: center;
+    }
+  }
 `;
 
 const TicketWrapper = styled.div`
@@ -66,6 +73,12 @@ const SectionLeft = styled.section`
     height: 370px;
     padding: 0px 0px;
     text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: flex-start;
   }
 `;
 const SectionRight = styled.section`
@@ -136,6 +149,11 @@ const Image = styled.img`
     max-width: 430px;
     min-height: 330px;
     border-radius: 25px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    min-height: 220px;
+    border-radius: 20px;
   }
 `;
 const Devider = styled.div`

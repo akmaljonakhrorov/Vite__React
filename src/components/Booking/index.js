@@ -13,6 +13,11 @@ const Container = styled.div`
     max-width: 480px;
     padding: 0px;
   }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    min-width: 728px;
+    padding: 0px;
+  }
 `;
 
 const HomeImg = styled.img`
@@ -23,6 +28,11 @@ const HomeImg = styled.img`
     max-width: 480px;
     padding: 0px;
     height: 432px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0px;
+    height: 600px;
   }
 `;
 const Content = styled.div`
@@ -43,6 +53,12 @@ const Content = styled.div`
       font-size: 24px;
       font-weight: 700;
       min-width: 310px;
+      height: 32px;
+      margin-bottom: 64px !important;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 44px;
+      min-width: 600px;
       height: 32px;
       margin-bottom: 64px !important;
     }
@@ -87,6 +103,12 @@ const Button = styled.div`
     padding: 12px 24px;
     font-size: 14px;
   }
+  @media only screen and (max-width: 768px) {
+    max-width: 160px;
+    max-height: 45px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
 `;
 const Section = styled.section`
   display: flex;
@@ -102,6 +124,15 @@ const Section = styled.section`
     top: 75%;
     left: 15%;
     margin-top: 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    margin-top: 30px;
+    padding: 0px 20px;
   }
 `;
 const SectionItem = styled.div`
@@ -124,7 +155,15 @@ const SectionItem = styled.div`
     min-width: 332px;
     min-height: 290px;
     gap: 25px;
-    /* margin-top: 30px; */
+  }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 200px;
+    max-height: 240px;
+    gap: 20px;
+    text-align: center;
   }
 `;
 const ContactIcon = styled.div`

@@ -151,7 +151,10 @@ video {
 .ant-btn-variant-solid {
   display: none;
 }
-/* ticket */
+/* locations */
+.slider-items {
+  padding-left: 40px;
+}
 
 /* facts */
 .direction {

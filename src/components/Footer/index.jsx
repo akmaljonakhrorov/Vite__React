@@ -25,18 +25,24 @@ export const Footer = () => {
         {dataToTranslate.map((value, index) => {
           return (
             <>
-              <Content>
+              <Content key={index}>
                 <div className="footer__subtitle">{value.subtitle}</div>
                 <div className="title">{value.title}</div>
                 <div className="content__items">
                   <span className="content__item">
-                    <FaTelegram />
+                    <a href="https://t.me/+yo3-7v2W5jsxOGYy">
+                      <FaTelegram />
+                    </a>
                   </span>
                   <span className="content__item">
-                    <FaInstagramSquare />
+                    <a href="https://www.instagram.com">
+                      <FaInstagramSquare />
+                    </a>
                   </span>
                   <span className="content__item">
-                    <FaFacebook />
+                    <a href="https://www.facebook.com">
+                      <FaFacebook />
+                    </a>
                   </span>
                 </div>
               </Content>

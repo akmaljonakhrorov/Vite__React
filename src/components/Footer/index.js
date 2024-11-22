@@ -18,6 +18,12 @@ const Container = styled.div`
     padding-bottom: 24px;
     padding: 0px 0px;
   }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    min-width: 768px;
+    min-height: 400px;
+    padding: 0px 0px !important;
+  }
 `;
 const Section = styled.div`
   display: flex;
@@ -30,6 +36,12 @@ const Section = styled.div`
     width: 100%;
     padding: 50px 0px;
   }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+  }
 `;
 const Content = styled.div`
   display: flex;
@@ -41,7 +53,16 @@ const Content = styled.div`
   width: 100%;
   max-height: 300px;
   color: white;
-  padding: 25px;
+  padding: 15px;
+  gap: 15px;
+  .content__items {
+    cursor: pointer;
+  }
+  .content__item a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+  }
   .title {
     padding: 0px !important;
     margin: opx !important;
@@ -65,6 +86,20 @@ const Content = styled.div`
     color: white;
     max-height: 230px;
     padding-top: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    * {
+      display: flex;
+      align-self: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .title {
+      margin-top: 10px;
+    }
+    .content__items {
+      padding-top: 10px;
+    }
   }
 `;
 const Devider = styled.div`

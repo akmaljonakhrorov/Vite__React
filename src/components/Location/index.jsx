@@ -42,7 +42,7 @@ export const Location = () => {
       {dataToTranslate.map((value, index) => {
         return (
           <>
-            <Content>
+            <Content key={index}>
               <div className="subTitle">{value.subtitle}</div>
               <div className="title">{value.title}</div>
             </Content>
