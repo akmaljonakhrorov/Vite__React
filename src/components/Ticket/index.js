@@ -22,6 +22,17 @@ const Container = styled.div`
     padding: 0px 0px;
     text-align: center;
   }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 728px;
+    box-sizing: border-box;
+    min-height: 850px;
+    padding: 0px 0px;
+    margin-top: 200px;
+    .title {
+      padding: 25px 0px;
+    }
+  }
 `;
 
 const TicketWrapper = styled.div`
@@ -105,6 +116,13 @@ const AntDButton = styled(Button)`
     height: 60px;
     padding: 12px 20px;
   }
+  @media only screen and (max-width: 768px) {
+    width: 150px;
+    height: 50px;
+    padding: 12px 20px;
+    padding: 0px;
+    margin-top: 10px;
+  }
 `;
 
 const Image = styled.img`
@@ -115,6 +133,12 @@ const Image = styled.img`
     max-width: 430px;
     min-height: 330px;
     border-radius: 25px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 430px;
+    min-height: 330px;
+    border-radius: 20px;
   }
 `;
 const Devider = styled.div`

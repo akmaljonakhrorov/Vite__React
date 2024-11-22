@@ -51,7 +51,7 @@ export const Cities = () => {
         })}
       </Content>
       <div className="slider-container">
-        <Slider {...settings}>
+        <Slider {...settings} className="slider-items">
           <Card src="https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpbmF8ZW58MHx8MHx8fDA%3D" />
           <Card src="https://plus.unsplash.com/premium_photo-1664304488525-44a96338c0cc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpbmF8ZW58MHx8MHx8fDA%3D" />
           <Card src="https://images.unsplash.com/photo-1508991399032-9cf2f7f791e0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNoaW5hfGVufDB8fDB8fHww" />

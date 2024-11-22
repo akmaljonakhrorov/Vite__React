@@ -72,16 +72,23 @@ const Navbar = () => {
                     </ul>
                   </div>
                   <div className="contact">
-                    <FaTelegram className="nav-icon" />
+                    <a href="https://t.me/+yo3-7v2W5jsxOGYy">
+                      <FaTelegram className="nav-icon" />
+                    </a>
                   </div>
                   <div className="contact">
-                    <FaInstagramSquare className="nav-icon" />
+                    <a href="https://www.instagram.com/accounts/login/?hl=en">
+                      <FaInstagramSquare className="nav-icon instagram" />
+                    </a>
                   </div>
                   <div className="contact">
-                    <FaFacebook className="nav-icon" />
+                    <a href="https://www.facebook.com">
+                      <FaFacebook className="nav-icon" />
+                    </a>
                   </div>
                   <div className="contact">
                     <select
+                      className="btn btn-outline-primary"
                       name="lang"
                       id="lang"
                       onChange={handleChangeLang}

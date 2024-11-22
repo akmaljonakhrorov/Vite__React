@@ -10,6 +10,7 @@ const Home = () => {
       contact: t("home.contact"),
     },
   ];
+
   return (
     <Container>
       <HomeImg src={home} alt={"home__image"} />

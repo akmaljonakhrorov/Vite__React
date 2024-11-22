@@ -13,6 +13,9 @@ const HomeImg = styled.img`
   @media only screen and (max-width: 480px) {
     width: 100%;
     max-width: 480px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
     height: 50vh;
   }
 `;
@@ -51,6 +54,28 @@ const Content = styled.div`
       font-weight: 600;
       color: white;
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 510px;
+    h1 {
+      font-size: 56px;
+      font-weight: 700;
+      margin: 10px 0px;
+      color: white;
+      margin: 12px 0px;
+    }
+    h2 {
+      padding-top: 24px;
+      width: 300px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+    }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 const Blur = styled.div`
@@ -92,7 +117,25 @@ const Button = styled.div`
     border-radius: 25px;
     font-size: 14px;
     font-weight: 600;
+    transition: transform 0.5s ease-in-out;
     &:hover {
+      width: 125px;
+      background: white;
+      color: rgb(117, 164, 193);
+      border: 2px solid #75a4c1;
+      transform: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100px;
+    height: 48px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      width: 120px;
       background: white;
       color: rgb(117, 164, 193);
       border: 2px solid #75a4c1;

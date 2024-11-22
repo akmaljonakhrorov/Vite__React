@@ -69,6 +69,9 @@ video {
 .contact {
   margin-left: 20px;
 }
+.instagram {
+  color: #d7153b;
+}
 /* generic styles */
 .subTitle {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -77,6 +80,12 @@ video {
   line-height: 36px;
   color: rgb(42, 42, 42);
   text-align: center;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 728px;
+    height: 72px;
+    text-align: center;
+  }
 }
 .title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -138,7 +147,6 @@ video {
 .ant-modal-title {
   opacity: 0;
 }
-
 .ant-btn-color-default,
 .ant-btn-variant-solid {
   display: none;

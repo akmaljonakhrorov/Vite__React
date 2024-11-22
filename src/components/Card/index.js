@@ -4,6 +4,10 @@ const Container = styled.div`
   position: relative;
   margin-bottom: 75px;
   box-sizing: border-box;
+  padding-left: 25px;
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const Content = styled.div`
@@ -21,6 +25,12 @@ const Content = styled.div`
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
   padding: 20px;
   gap: 0.25rem;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 320px;
+    max-height: 345px;
+    padding: 20px;
+  }
 `;
 
 const CardImage = styled.div`

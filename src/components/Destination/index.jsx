@@ -38,14 +38,6 @@ export const Destination = () => {
   return (
     <Container>
       <Content>
-        {/* <div className="subTitle">
-          Top 10 Beautiful Destinations for Unforgettable Travels
-        </div>
-        <div className="title">
-          Every week, new opportunities and unexpected adventures await you!
-          Each city reveals its hidden beauty, offering you new adventures. Feel
-          like you are part of these wonders!
-        </div> */}
         {dataToTranslate.map((value, index) => {
           return (
             <>

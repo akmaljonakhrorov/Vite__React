@@ -18,8 +18,6 @@ import {
 // react icons
 import { FaUsers, FaCheck } from "react-icons/fa";
 import { IoIosPricetags, IoIosTime } from "react-icons/io";
-// antd modal
-import { Modal } from "antd";
 // chnage language
 import { useTranslation } from "react-i18next";
 
@@ -82,7 +80,6 @@ const Card = ({ src }) => {
                 <FaCheck className="right" />
                 {value?.assistance}
               </div>
-
               <Wrapper>
                 <AntDButton onClick={showModal}>{value?.resevre}</AntDButton>
                 <AntModal
