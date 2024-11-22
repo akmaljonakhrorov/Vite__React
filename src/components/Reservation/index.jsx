@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+
 import { Container, Button, Section, Form, Input, Content } from ".";
 // send message to telegram bot via axios
 import axios from "axios";
-
+// antd datepicker
+import { DatePicker, Space } from "antd";
+const onChange = (date, dateString) => {
+  console.log(date, dateString);
+};
 export const Reservation = () => {
   const [loading, setLoading] = useState(false);
   const sendMessage = (event) => {
@@ -41,23 +46,37 @@ export const Reservation = () => {
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14256.336692620658!2d69.26439781081066!3d41.30830658956247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b05d9b22dd1%3A0x54d0e020e1e0309e!2sLoca!5e0!3m2!1sen!2s!4v1731939447847!5m2!1sen!2s"></iframe>
       </Section>
       <Form id="myForm" onSubmit={sendMessage}>
-        <div className="title">Make Your Reservation Through This Form</div>
+        <div className="form-title">
+          Make Your Reservation Through This Form
+        </div>
         <Content>
           <label htmlFor="">
             Name
-            <Input id="name" placeholder="Name" />
+            <Input id="name" placeholder="Ex. John Smith" />
           </label>
           <label htmlFor="">
             Number of Guests
             <Input id="guests" placeholder="1 or 2 or 3..." />
           </label>
         </Content>
-        <div classid="width__full">
-          <label htmlFor="">
-            Choose Your Destination
-            <Input id="destinations" placeholder="Country" $width={true} />
+        <Content>
+          <label htmlFor="" className="input__label">
+            Your Phone Number
+            <Input id="name" placeholder="Ex. +99891 123 45 67" />
           </label>
-          <label htmlFor="">
+          <label htmlFor="" className="input__label">
+            Check in Date
+            <Space direction="vertical">
+              <DatePicker id="pickDate" onChange={onChange} />
+            </Space>
+          </label>
+        </Content>
+        <div class="width__full">
+          <label htmlFor="" className="input__label">
+            Choose Your Destination
+            <Input id="destinations" placeholder="Ex. Beijing" $width={true} />
+          </label>
+          <label htmlFor="" className="visa-support">
             Choose Your Visa Support
             <Input id="support" placeholder="Ex.China" $width={true} />
           </label>

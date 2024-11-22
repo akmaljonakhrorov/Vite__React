@@ -204,16 +204,41 @@ video {
 }
 
 /* form */
+.form-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+}
 .width__full {
   width: 100%;
+  label {
+    width: 100%;
+  }
 }
 .input__label {
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: rgb(42, 42, 42);
-  margin-bottom: 0 !important;
+  color: rgb(0, 0, 0);
+}
+.visa-support {
   margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+.ant-picker {
+  width: 485px;
+  min-height: 35px;
+  padding: 6px 10px;
+  color: rgb(0, 0, 0);
+  border: 1.5px solid rgb(175, 175, 175);
+  border-radius: 10px;
+  margin-top: 5px;
 }
 
 /* footer */

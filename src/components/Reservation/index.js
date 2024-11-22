@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,7 +7,7 @@ const Container = styled.div`
   margin: auto;
   width: 100%;
   max-width: 1440px;
-  height: 800px;
+  height: 1000px;
   margin-top: 300px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
@@ -42,7 +41,9 @@ const Form = styled.form`
   align-items: center;
   width: 100%;
   max-width: 1030px;
-  height: 465px;
+  max-height: 600px;
+  gap: 20px;
+  margin-top: 30px;
   .title {
     font-size: 18px;
     font-weight: 700;
@@ -64,13 +65,20 @@ const Input = styled.input`
   border-radius: 10px;
   padding: 10px;
   outline: none;
+  margin-top: 5px;
+  &::placeholder {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+  }
 `;
 const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 40px;
+  min-height: 44px;
   border: none;
   border-radius: 20px;
   background: rgb(117, 164, 193);
@@ -84,7 +92,6 @@ const Button = styled.button`
     color: rgb(117, 164, 193);
     border: 1px solid rgb(117, 164, 193);
   }
-  margin-top: 20px;
   @media only screen and (max-width: 480px) {
     max-width: 300px;
     min-height: 40px;
@@ -99,6 +106,13 @@ const Content = styled.div`
   width: 100%;
   max-width: 1290px;
   gap: 20px;
+  label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+  }
   @media only screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
