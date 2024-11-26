@@ -40,7 +40,7 @@ export const Facts = () => {
     <Container>
       {dataToTranslate.map((value, index) => {
         return (
-          <>
+          <div key={index}>
             <div className="subTitle">{value.firstCardSubtitle}</div>
             <div className="title">{value.firstCardTitle}</div>
             <TicketWrapper>
@@ -148,7 +148,7 @@ export const Facts = () => {
                 </span>
               </SectionRight>
             </TicketWrapper>
-          </>
+          </div>
         );
       })}
     </Container>

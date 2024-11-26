@@ -31,10 +31,8 @@ export const Ticket = () => {
     <Container>
       {dataToTranslate.map((value, index) => {
         return (
-          <>
-            <div key={index} className="subTitle">
-              {value.subtitle}
-            </div>
+          <div key={index}>
+            <div className="subTitle">{value.subtitle}</div>
             <div className="title">{value.title}</div>
             <TicketWrapper>
               <SectionLeft>
@@ -65,7 +63,7 @@ export const Ticket = () => {
                 <div className="info">{value.secondCardInfo}</div>
               </SectionRight>
             </TicketWrapper>
-          </>
+          </div>
         );
       })}
     </Container>

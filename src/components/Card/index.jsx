@@ -58,10 +58,8 @@ const Card = ({ src }) => {
       <Content>
         {dataToTranslate.map((value, index) => {
           return (
-            <>
-              <div key={index} className="card__title">
-                {value?.cardTitle}
-              </div>
+            <div key={index}>
+              <div className="card__title">{value?.cardTitle}</div>
               <div className="info">
                 <FaUsers className="right users" />
                 {value?.clients}
@@ -104,7 +102,7 @@ const Card = ({ src }) => {
                   </SubmitSection>
                 </AntModal>
               </Wrapper>
-            </>
+            </div>
           );
         })}
       </Content>

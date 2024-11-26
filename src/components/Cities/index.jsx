@@ -41,12 +41,10 @@ export const Cities = () => {
       <Content>
         {dataToTranslate.map((value, index) => {
           return (
-            <>
-              <div key={index} className="subTitle">
-                {value?.pageSubtitle}
-              </div>
+            <div key={index}>
+              <div className="subTitle">{value?.pageSubtitle}</div>
               <div className="title">{value?.pageTitle}</div>
-            </>
+            </div>
           );
         })}
       </Content>

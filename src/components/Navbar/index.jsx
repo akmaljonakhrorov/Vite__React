@@ -26,8 +26,8 @@ const Navbar = () => {
     <Container>
       {dataToTranslate.map((value, index) => {
         return (
-          <>
-            <nav key={index} class="navbar navbar-expand-lg bg-body-tertiary">
+          <div key={index}>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
               <div class="container-fluid container text-center">
                 <a class="navbar-brand" href="#">
                   <Logo src={logoImg} alt="logo__image" />
@@ -102,7 +102,7 @@ const Navbar = () => {
                 </div>
               </div>
             </nav>
-          </>
+          </div>
         );
       })}
     </Container>

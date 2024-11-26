@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Modal } from "antd";
 const Container = styled.div`
   padding-top: 135px;
   position: relative;
@@ -141,5 +141,89 @@ const Button = styled.div`
     }
   }
 `;
+const Wrapper = styled.div`
+  padding: 12px 0px;
+  margin: 0px 15px;
+  form {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
-export { Container, HomeImg, Content, Blur, Button };
+const AntModal = styled(Modal)`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 480px;
+  height: 285px;
+  padding: 24px;
+`;
+const UserBackground = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+  background: rgb(163, 230, 53);
+`;
+const UserIcon = styled.img`
+  width: 30px;
+  height: 30px;
+`;
+const Input = styled.input`
+  display: flex;
+  width: 230px;
+  height: 45px;
+  border: 0.8px solid #d1d5db;
+  padding: 8px 16px;
+  border-radius: 8px;
+  &:focus {
+    border: 2px solid #a3e635;
+    outline: none;
+  }
+  font-size: 16px;
+  font-weight: 450;
+  text-transform: capitalize;
+`;
+const SubmitBtn = styled.button`
+  width: 100px;
+  height: 40px;
+  color: white;
+  background: rgb(163, 230, 53);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+`;
+
+const Section = styled.section`
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+`;
+const SubmitSection = styled.section`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;
+export {
+  Container,
+  HomeImg,
+  Content,
+  Blur,
+  Button,
+  AntModal,
+  Wrapper,
+  UserBackground,
+  SubmitSection,
+  Section,
+  SubmitBtn,
+  Input,
+  UserIcon,
+};

@@ -24,8 +24,8 @@ export const Footer = () => {
       <Section>
         {dataToTranslate.map((value, index) => {
           return (
-            <>
-              <Content key={index}>
+            <div key={index}>
+              <Content>
                 <div className="footer__subtitle">{value.subtitle}</div>
                 <div className="title">{value.title}</div>
                 <div className="content__items">
@@ -68,7 +68,7 @@ export const Footer = () => {
                   {value.contact}
                 </a>
               </Content>
-            </>
+            </div>
           );
         })}
       </Section>

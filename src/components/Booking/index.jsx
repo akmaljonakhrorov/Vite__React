@@ -31,7 +31,7 @@ const Booking = () => {
     <Container>
       {dataToTranslate.map((value, index) => {
         return (
-          <>
+          <div key={index}>
             <HomeImg src={home} alt={"city with the lake"} />
             <Blur />
             <Content>
@@ -62,7 +62,7 @@ const Booking = () => {
                 <div className="phone__number">{value.address}</div>
               </SectionItem>
             </Section>
-          </>
+          </div>
         );
       })}
     </Container>
