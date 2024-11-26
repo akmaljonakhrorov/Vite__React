@@ -50,21 +50,21 @@ export const Footer = () => {
                 <a href="#home" className="footer__title">
                   {value.links}
                 </a>
-                <a href="/" className="footer__title">
+                <a href="#home" className="footer__title">
                   {value.home}
                 </a>
-                <a href="/" className="footer__title">
+                <a href="#home" className="footer__title">
                   {value.about}
                 </a>
               </Content>
               <Content>
-                <a href="/" className="footer__title">
+                <a href="#home" className="footer__title">
                   {value.resources}
                 </a>
-                <a href="/" className="footer__title">
+                <a href="#home" className="footer__title">
                   {value.tours}
                 </a>
-                <a href="/" className="footer__title">
+                <a href="#home" className="footer__title">
                   {value.contact}
                 </a>
               </Content>

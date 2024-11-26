@@ -128,6 +128,9 @@ const AntDButton = styled(Button)`
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
   padding: 5px;
+  a {
+    text-decoration: none;
+  }
   &:hover {
     background: white;
     color: rgb(117, 164, 193);

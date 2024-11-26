@@ -41,7 +41,9 @@ export const Ticket = () => {
               <SectionRight>
                 <Content>
                   <div className="card__title left">{value.firstCardTitle}</div>
-                  <AntDButton>{value.button}</AntDButton>
+                  <AntDButton>
+                    <a href="#move-to-map">{value.button}</a>
+                  </AntDButton>
                 </Content>
                 <p className="info">{value.world}</p>
                 <div className="info">{value.firstCardInfo}</div>
@@ -57,7 +59,9 @@ export const Ticket = () => {
                   <div className="card__title left">
                     {value.secondCardTitle}
                   </div>
-                  <AntDButton>{value.button}</AntDButton>
+                  <AntDButton>
+                    <a href="#move-to-map">{value.button}</a>
+                  </AntDButton>
                 </Content>
                 <p className="info">{value.global}</p>
                 <div className="info">{value.secondCardInfo}</div>

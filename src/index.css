@@ -165,6 +165,15 @@ video {
   line-height: 34px;
   color: rgb(159, 209, 240);
   cursor: pointer;
+  a {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 34px;
+    color: rgb(159, 209, 240);
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 .direction:hover .arrow {
   transform: translateX(5px);

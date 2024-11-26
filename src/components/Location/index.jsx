@@ -41,7 +41,7 @@ export const Location = () => {
     <Container>
       {dataToTranslate.map((value, index) => {
         return (
-          <div div key={index}>
+          <div key={index} id="location">
             <Content>
               <div className="subTitle">{value.subtitle}</div>
               <div className="title">{value.title}</div>

@@ -50,7 +50,9 @@ export const Facts = () => {
               <SectionRight>
                 <Content>
                   <div className="card__title left">{value.firstCard}</div>
-                  <AntDButton>{value.button}</AntDButton>
+                  <AntDButton>
+                    <a href="#location">{value.button}</a>
+                  </AntDButton>
                 </Content>
                 <p className="info">{value.world}</p>
                 <div className="info">{value.firstCardInfo}</div>
@@ -73,7 +75,7 @@ export const Facts = () => {
                 </Detailts>
                 <Devider></Devider>
                 <span className="direction">
-                  {value.direction}
+                  <a href="#move-to-map">{value.direction}</a>
                   <FaLongArrowAltRight className="arrow" />
                 </span>
               </SectionRight>
@@ -85,7 +87,9 @@ export const Facts = () => {
               <SectionRight>
                 <Content>
                   <div className="card__title left">{value.secondCard}</div>
-                  <AntDButton>{value.button}</AntDButton>
+                  <AntDButton>
+                    <a href="#location">{value.button}</a>
+                  </AntDButton>
                 </Content>
                 <p className="info">{value.kingdom}</p>
                 <div className="info">{value.secondCardInfo}</div>
@@ -108,7 +112,7 @@ export const Facts = () => {
                 </Detailts>
                 <Devider></Devider>
                 <span className="direction">
-                  {value.direction}
+                  <a href="#move-to-map">{value.direction}</a>
                   <FaLongArrowAltRight className="arrow" />
                 </span>
               </SectionRight>
@@ -120,7 +124,9 @@ export const Facts = () => {
               <SectionRight>
                 <Content>
                   <div className="card__title left">{value.thirdCard}</div>
-                  <AntDButton>{value.button}</AntDButton>
+                  <AntDButton>
+                    <a href="#location">{value.button}</a>
+                  </AntDButton>
                 </Content>
                 <p className="info">{value.diversity}</p>
                 <div className="info">{value.thirdCardInfo}</div>
@@ -143,7 +149,7 @@ export const Facts = () => {
                 </Detailts>
                 <Devider></Devider>
                 <span className="direction">
-                  {value.direction}
+                  <a href="#move-to-map">{value.direction}</a>
                   <FaLongArrowAltRight className="arrow" />
                 </span>
               </SectionRight>
