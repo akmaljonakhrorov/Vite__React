@@ -92,12 +92,12 @@ const Card = ({ src }) => {
                   </UserBackground>
                   <h4>{value?.fillForm}</h4>
                   <Section>
-                    <Input placeholder={value?.name} />
-                    <Input placeholder={value?.phoneNumber} />
+                    <Input placeholder={value?.name} required />
+                    <Input placeholder={value?.phoneNumber} required />
                   </Section>
                   <Section>
-                    <Input placeholder={value?.surname} />
-                    <Input placeholder={value?.telegramUsName} />
+                    <Input placeholder={value?.surname} required />
+                    <Input placeholder={value?.telegramUsName} required />
                   </Section>
                   <SubmitSection>
                     <SubmitBtn>{value?.submit}</SubmitBtn>

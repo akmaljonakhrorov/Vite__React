@@ -12,7 +12,7 @@ const Home = () => {
   ];
 
   return (
-    <Container>
+    <Container id="home">
       <HomeImg src={home} alt={"home__image"} />
       <Blur />
       <Content>

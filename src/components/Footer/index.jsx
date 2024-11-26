@@ -47,7 +47,7 @@ export const Footer = () => {
                 </div>
               </Content>
               <Content>
-                <a href="/" className="footer__title">
+                <a href="#home" className="footer__title">
                   {value.links}
                 </a>
                 <a href="/" className="footer__title">

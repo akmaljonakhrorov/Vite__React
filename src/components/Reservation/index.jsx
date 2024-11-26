@@ -31,7 +31,7 @@ export const Reservation = () => {
     })
       .then((res) => {
         document.getElementById("myForm").reset();
-        alert("Success", res);
+        alert("Successfully sent");
       })
       .catch((err) => {
         console.log("Smthing went wrong", err);
@@ -52,33 +52,38 @@ export const Reservation = () => {
         <Content>
           <label htmlFor="">
             Name
-            <Input id="name" placeholder="Ex. John Smith" />
+            <Input id="name" placeholder="Ex. John Smith" required />
           </label>
           <label htmlFor="">
             Number of Guests
-            <Input id="guests" placeholder="1 or 2 or 3..." />
+            <Input id="guests" placeholder="1 or 2 or 3..." required />
           </label>
         </Content>
         <Content>
           <label htmlFor="" className="input__label">
             Your Phone Number
-            <Input id="name" placeholder="Ex. +99891 123 45 67" />
+            <Input id="name" placeholder="Ex. +99891 123 45 67" required />
           </label>
           <label htmlFor="" className="input__label">
             Check in Date
             <Space direction="vertical">
-              <DatePicker id="pickDate" onChange={onChange} />
+              <DatePicker id="pickDate" onChange={onChange} required />
             </Space>
           </label>
         </Content>
         <div class="width__full">
           <label htmlFor="" className="input__label">
             Choose Your Destination
-            <Input id="destinations" placeholder="Ex. Beijing" $width={true} />
+            <Input
+              id="destinations"
+              placeholder="Ex. Beijing"
+              $width={true}
+              required
+            />
           </label>
           <label htmlFor="" className="visa-support">
             Choose Your Visa Support
-            <Input id="support" placeholder="Ex.China" $width={true} />
+            <Input id="support" placeholder="Ex.China" $width={true} required />
           </label>
         </div>
         <Button type="submit" loading={loading}>
